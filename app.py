@@ -172,4 +172,4 @@ if __name__ == '__main__':
 
  #fileob = open('models/cnn_model.pkl', 'rb')
  #model = pickle.load(fileob)
- app.run(port=5000,debug=True)
+ app.run(debug=True)
