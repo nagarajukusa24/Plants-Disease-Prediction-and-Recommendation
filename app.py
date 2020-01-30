@@ -131,7 +131,8 @@ def upload_file():
         imgpath = f.filename
         #fileob = open('cnn_model.pkl', 'rb')
         #model = pickle.load(fileob)
-        model = load_model('cropdisease.h5')
+        #model = load_model('cropdisease.h5')s3://ec2-13-233-85-177.ap-south-1.compute.amazonaws.com/cropdisease.h5
+        model = load_model('s3://ec2-13-233-85-177.ap-south-1.compute.amazonaws.com/cropdisease.h5')
         imar = cv2.imread(imgpath)
         #img3 = cv2.cvtColor(imar, cv2.COLOR_BGR2RGB)
         img3 = cv2.resize(imar,(256,256),3)
@@ -169,4 +170,4 @@ if __name__ == '__main__':
 
  #fileob = open('models/cnn_model.pkl', 'rb')
  #model = pickle.load(fileob)
- app.run(debug=True)
+ app.run(host='0.0.0.0',port=8000)
