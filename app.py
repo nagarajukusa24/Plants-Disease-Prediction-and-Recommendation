@@ -131,7 +131,9 @@ def upload_file():
         imgpath = f.filename
         #fileob = open('cnn_model.pkl', 'rb')
         #model = pickle.load(fileob)
-        model = load_model('cropdisease.h5')#s3://ec2-13-233-85-177.ap-south-1.compute.amazonaws.com/cropdisease.h5
+
+        model = load_model('cropdisease.h5')
+	#s3://ec2-13-233-85-177.ap-south-1.compute.amazonaws.com/cropdisease.h5
         #model = load_model('s3://ec2-13-233-85-177.ap-south-1.compute.amazonaws.com/cropdisease.h5')
         imar = cv2.imread(imgpath)
         #img3 = cv2.cvtColor(imar, cv2.COLOR_BGR2RGB)
