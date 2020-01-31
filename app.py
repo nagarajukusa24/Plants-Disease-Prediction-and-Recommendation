@@ -167,7 +167,11 @@ def upload_file():
         #label1 = list1[PREDICTEDCLASSES2[0]]
         label1 = list1[PREDICTEDCLASSES2[0]]
         #label = reverse_mapping[label1]
-        return render_template('predict.html', name=label1)
+       # if(label1=='Pepper__bell___Bacterial_spot'):
+        #    rem = 'https://www2.ipm.ucanr.edu/agriculture/tomato/Bacterial-spot/'
+        #else:
+         #   rem = 'More suggestions data required'
+        #return render_template('predict.html', name=label1,remm = rem)
 
 if __name__ == '__main__':
  #app.run(debug=True)
