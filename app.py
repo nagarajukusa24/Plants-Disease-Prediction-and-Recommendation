@@ -115,8 +115,8 @@ import numpy as np
 from sklearn import preprocessing
 from keras.models import load_model
 import cv2
-import os
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+#import os
+#os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 app = Flask(__name__)
 
