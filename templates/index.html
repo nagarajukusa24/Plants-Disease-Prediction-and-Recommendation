@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Dog & Cat Classification</title>
+  <title>Disease Prediction</title>
       <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -40,9 +40,10 @@
         cursor: inherit;
         display: block;
     }
+
 </style>
 
-<body>
+<body bgcolor="powderblue">
 <header class="navbar">
 
 
@@ -52,11 +53,17 @@
        <!-- <img style="max-width: 600px" src="{{ url_for('static', filename='cat-dog.jpg') }}"/> -->
    </div>
 
-  <form action="/upload" method="post" enctype="multipart/form-data" style="margin-top: 30px; width: 80%; text-align: center; margin: auto;" onsubmit="showloading()">
+<h1 align="center">Plant Disease Prediction | Jai Kisan | CSE</h1>
+<br>
+<br>
+<h3 align="center">Please Upload an infected plant leaf to predict</h3>
+<br>
+<br>
+  <form action="/upload" method="post" enctype="multipart/form-data" style="margin-top: 50px; width: 8	0%; text-align: center; margin: auto;" onsubmit="showloading()">
       <span class="btn btn-default btn-file">
         Select Image <input type="file" name="file">
     </span><br><br>
-        <input type="submit" value="Upload" class="btn btn-primary">
+        <input type="submit" value="Predict Disease" class="btn btn-primary">
   </form>
     <div style="text-align: center">
         <img id="loading_image" style="display: none" src="{{ url_for('static', filename='loading.gif')}}">
