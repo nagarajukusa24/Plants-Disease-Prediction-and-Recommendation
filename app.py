@@ -171,7 +171,7 @@ def upload_file():
         #    rem = 'https://www2.ipm.ucanr.edu/agriculture/tomato/Bacterial-spot/'
         #else:
          #   rem = 'More suggestions data required'
-        #return render_template('predict.html', name=label1,remm = rem)
+        return render_template('predict.html', name=label1)
 
 if __name__ == '__main__':
  #app.run(debug=True)
